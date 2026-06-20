@@ -1,13 +1,19 @@
 -- PLUGINS
 vim.pack.add{
-	{ src = 'https://github.com/neovim/nvim-lspconfig' },
-	{ src = 'https://github.com/mason-org/mason.nvim' },
-	{ src = 'https://github.com/nvim-tree/nvim-tree.lua' },
+	{ src = "https://github.com/neovim/nvim-lspconfig" },
+	{ src = "https://github.com/mason-org/mason.nvim" },
+	{ src = "https://github.com/nvim-tree/nvim-tree.lua" },
 	{ src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
+	{ src = "https://github.com/nvim-mini/mini.completion" },
+	{ src = "https://github.com/nvim-mini/mini.pairs" },
+	{ src = "https://github.com/nvim-mini/mini.surround" },
 }
 
 require("mason").setup()
 require("nvim-tree").setup()
+require("mini.completion").setup()
+require("mini.pairs").setup()
+require("mini.surround").setup()
 
 -- OPTIONS
 vim.g.mapleader = ' ' -- set <space> as the leader key
@@ -55,5 +61,5 @@ vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
 vim.keymap.set("n", "<leader>ef", ":NvimTreeToggle<CR>")
 
 -- LSPs
-vim.lsp.config('lua_ls', {})
+-- vim.lsp.config("lua_ls", {})
 vim.lsp.enable({'lua_ls', 'clangd', 'jdtls'})
