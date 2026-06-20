@@ -24,6 +24,9 @@ vim.o.tabstop = 2
 vim.o.cursorline = true -- Highlight the line where the cursor is on.
 vim.o.scrolloff = 10 -- Keep this many screen lines above/below the cursor.
 
+vim.o.ignorecase = true
+vim.o.smartcase = true
+
 vim.o.winborder = "rounded"
 
 -- KEYMAPS
