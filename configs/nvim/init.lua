@@ -3,7 +3,7 @@ vim.pack.add{
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/nvim-tree/nvim-tree.lua" },
-	{ src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
+	{ src = "https://github.com/rebelot/kanagawa.nvim" },
 	{ src = "https://github.com/nvim-mini/mini.completion" },
 	{ src = "https://github.com/nvim-mini/mini.pairs" },
 	{ src = "https://github.com/nvim-mini/mini.surround" },
@@ -19,8 +19,7 @@ require("mini.surround").setup()
 vim.g.mapleader = ' ' -- set <space> as the leader key
 
 vim.o.termguicolors = true
-vim.cmd.colorscheme("catppuccin-mocha")
-
+vim.cmd.colorscheme("kanagawa")
 vim.o.number = true -- show line numbers in a column.
 vim.o.relativenumber = false -- show line numbers relative to where the cursor is.
 
