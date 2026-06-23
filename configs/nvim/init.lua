@@ -17,21 +17,17 @@ require("mini.surround").setup()
 
 -- OPTIONS
 vim.g.mapleader = ' ' -- set <space> as the leader key
-
 vim.o.termguicolors = true
 vim.cmd.colorscheme("kanagawa")
+vim.o.swapfile = false
 vim.o.number = true -- show line numbers in a column.
 vim.o.relativenumber = false -- show line numbers relative to where the cursor is.
-
 vim.o.shiftwidth = 2
 vim.o.tabstop = 2
-
 vim.o.cursorline = true -- Highlight the line where the cursor is on.
 vim.o.scrolloff = 10 -- Keep this many screen lines above/below the cursor.
-
 vim.o.ignorecase = true
 vim.o.smartcase = true
-
 vim.o.winborder = "rounded"
 
 -- KEYMAPS
